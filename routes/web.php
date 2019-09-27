@@ -11,11 +11,12 @@
 |
 */
 
-Route::post('/', function () {
-    return 'test post';
+Route::get('/books/{id}/category/{catId}', function () {
+    return 'book number '.request()->id." category id".request()->catId;
 });
 
 
 Route::get('/', function () {
     return 'test';
 });
+
