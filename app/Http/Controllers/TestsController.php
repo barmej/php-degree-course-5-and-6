@@ -13,6 +13,6 @@ class TestsController extends Controller
             $rand = rand(0,10);
             $sum+=$rand;
         }
-        return $sum;
+        return view('welcome',compact('sum'));
     }
 }

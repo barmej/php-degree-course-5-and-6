@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    {{ request()->name }}
+                    {{ $sum }}
                 </div>
 
                 <div class="links">
