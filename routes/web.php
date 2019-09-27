@@ -11,6 +11,11 @@
 |
 */
 
+Route::post('/', function () {
+    return 'test post';
+});
+
+
 Route::get('/', function () {
     return 'test';
 });
