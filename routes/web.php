@@ -11,6 +11,8 @@
 |
 */
 
+Route::get('/testing','TestsController@index');
+
 Route::get('/',function(){
     return redirect('login');
 });
