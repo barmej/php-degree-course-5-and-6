@@ -16,7 +16,7 @@ Route::get('/books/{id}/category/{catId}', function () {
 });
 
 
-Route::get('/', function () {
-    return 'test';
+Route::get('/{name}', function () {
+    return view('welcome');
 });
 
