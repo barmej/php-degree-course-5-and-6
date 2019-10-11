@@ -21,6 +21,8 @@ Route::get('/login',function(){
     return 'login page';
 })->name('login');
 
+Route::get('/books','BooksController@index');
+
 Route::get('/books/{id}/category/{catId}', function () {
     return 'book number '.request()->id." category id".request()->catId;
 });
