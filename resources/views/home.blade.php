@@ -4,6 +4,11 @@
 
 @section('content')
 
+@php
+    echo "انا مغامر";
+@endphp
+
+
 @forelse ($books as $book)
     {{ $loop->index }} رقم الدوره<br>
     {{$book->title}} عنوان الكتاب هو<br>
