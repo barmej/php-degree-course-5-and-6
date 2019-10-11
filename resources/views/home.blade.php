@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    الواجهه
+    {{-- هذا هو اول تعليق لي في الواجهات --}}
+    {{ $book }}
 </body>
 </html>
