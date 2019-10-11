@@ -8,7 +8,7 @@ use App\Book;
 class BooksController extends Controller
 {
     public function index(){
-        $book = Book::first();
-        return view('home',compact('book'));
+        $books = Book::all();
+        return view('home',compact('books'));
     }
 }

@@ -7,13 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    {{-- هذا هو اول تعليق لي في الواجهات --}}
-    {{ $book }}
-    <br>
-
-    @empty($book)
-        الكتاب فارغ
-    @endempty
-
+    @for ($i = 0; $i < count($books); $i++)
+        {{$books[$i]->title }} هذا عنوان الكتاب<br>
+    @endfor
 </body>
 </html>
