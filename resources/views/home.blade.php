@@ -19,11 +19,19 @@
 
 <form action="./books/create" method="post">
     @csrf
+    <select name="user" id="user">
+        @foreach($users as $user)
+            <option value="{{$user->id}}">
+                {{$user->name}}
+            </option>
+        @endforeach
+    </select><br>
+
     <label for="title">عنوان الكتاب</label>
     <input type="text" name="title" id="title"><br>
 
     <label for="pages">عدد الصفحات</label>
-    <input type="text" name="pages" id="pages"><br>
+    <input type="number" min="1" max="2000" name="pages" id="pages"><br>
 
     <input type="submit" value="ادخال">
 </form>
