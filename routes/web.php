@@ -27,6 +27,8 @@ Route::get('/books/{id}/category/{catId}', function () {
     return 'book number '.request()->id." category id".request()->catId;
 });
 
+Route::post('/books/create','BooksController@store');
+
 
 Route::get('/{name}', function () {
     return view('welcome');

@@ -11,4 +11,8 @@ class BooksController extends Controller
         $books = Book::all();
         return view('home',compact('books'));
     }
+
+    public function store(){
+        return request();
+    }
 }

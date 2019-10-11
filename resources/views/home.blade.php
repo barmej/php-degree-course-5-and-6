@@ -17,4 +17,15 @@
         لا توجد كتب
 @endforelse
 
+<form action="./books/create" method="post">
+    @csrf
+    <label for="title">عنوان الكتاب</label>
+    <input type="text" name="title" id="title"><br>
+
+    <label for="pages">عدد الصفحات</label>
+    <input type="text" name="pages" id="pages"><br>
+
+    <input type="submit" value="ادخال">
+</form>
+
 @endsection
