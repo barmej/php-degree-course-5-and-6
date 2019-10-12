@@ -4,6 +4,8 @@
 
 @section('content')
 
+@lang('messages.hello')
+
 @php
     echo "انا مغامر";
 @endphp
