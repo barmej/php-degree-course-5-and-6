@@ -15,7 +15,7 @@ class App
      */
     public function handle($request, Closure $next)
     {
-        app()->setLocale('en');
+        app()->setLocale(session('lang'));
         return $next($request);
     }
 }

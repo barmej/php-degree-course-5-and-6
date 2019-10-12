@@ -7,7 +7,10 @@
     <title>App name - @yield('title')</title>
 </head>
 <body>
-    <header>Header يكون هنا</header>
+    <header>
+        <a href="/toArabic">العربية</a>
+        <a href="/toEnglish">English</a>
+    </header>
 
     @if($errors->any())
         <div class="alert alert-danger">

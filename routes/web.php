@@ -29,8 +29,11 @@ Route::get('/books/{id}/category/{catId}', function () {
 
 Route::post('/books/create','BooksController@store');
 
+Route::get('/toArabic', 'SessionsController@toArabic');
+Route::get('/toEnglish', 'SessionsController@toEnglish');
 
 Route::get('/{name}', function () {
     return view('welcome');
 });
+
 

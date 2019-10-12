@@ -9,9 +9,6 @@ use App\User;
 class BooksController extends Controller
 {
     public function index(){
-
-        return response('delete cookie')->cookie('barmej','learn programming',0);
-
         $users= User::select('id','name')->get();
         $books = Book::all();
         return view('home',compact('books','users'));
