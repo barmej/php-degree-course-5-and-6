@@ -1,7 +1,8 @@
 <?php
 
 return [
-    'hello' => 'مرحبا'
+    'hello' => 'مرحبا',
+    'yourbalance' => 'تم خصم :deduct من حسابك  رصيدك هو :balance دينار'
 ]
 
 ?>

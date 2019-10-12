@@ -2,7 +2,7 @@
 
 return [
     'hello' => 'hello there',
-    'testing' => 'testing this feature'
+    'yourbalance' => 'Your balance has been deducted :dedeuct, your balance is :balance KD'
 ]
 
 ?>

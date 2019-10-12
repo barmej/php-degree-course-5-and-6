@@ -4,7 +4,7 @@
 
 @section('content')
 
-@lang('messages.nothere') <br>
+{{ __('messages.yourbalance',['deduct'=>'20','balance'=>'100']) }} <br><br>
 
 @php
     echo "انا مغامر";
