@@ -4,7 +4,7 @@
 
 @section('content')
 
-@lang('messages.hello')
+@lang('messages.nothere') <br>
 
 @php
     echo "انا مغامر";

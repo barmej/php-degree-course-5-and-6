@@ -1,7 +1,8 @@
 <?php
 
 return [
-    'hello' => 'hello there'
+    'hello' => 'hello there',
+    'testing' => 'testing this feature'
 ]
 
 ?>
