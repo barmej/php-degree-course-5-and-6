@@ -6,9 +6,9 @@
 
 {{ __('messages.yourbalance',['deduct'=>'20','balance'=>'100']) }} <br><br>
 
-@php
-    echo "انا مغامر";
-@endphp
+@component('components.alert',['title'=>'مرحبا بك','type'=>'danger'])
+    هذه رساله نجاح
+@endcomponent
 
 
 @forelse ($books as $book)
