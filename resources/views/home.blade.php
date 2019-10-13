@@ -30,10 +30,10 @@
     </select><br>
 
     <label for="title">عنوان الكتاب</label>
-    <input type="text" name="title" id="title"><br>
+    <input type="text" name="title" id="title" value="{{ old('title') }}"><br>
 
     <label for="pages">عدد الصفحات</label>
-    <input type="number" min="1" max="2000" name="pages" id="pages"><br>
+    <input type="number" min="1" max="2000" name="pages" id="pages" value="{{ old('pages') }}"><br>
 
     <input type="submit" value="ادخال">
 </form>
