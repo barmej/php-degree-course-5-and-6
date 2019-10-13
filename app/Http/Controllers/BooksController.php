@@ -6,11 +6,16 @@ use Illuminate\Http\Request;
 use App\Book;
 use App\User;
 
+use App\Repositories\BooksRepository;
+
 class BooksController extends Controller
 {
     public function index(){
         $users= User::select('id','name')->get();
-        $books = Book::all();
+
+        $bookRepository = new BooksRepository();
+        $books = $bookRepository->all();
+        
         return view('home',compact('books','users'));
     }
 
