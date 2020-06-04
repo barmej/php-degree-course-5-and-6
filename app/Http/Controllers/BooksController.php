@@ -10,12 +10,12 @@ use App\Repositories\BooksRepository;
 
 class BooksController extends Controller
 {
-    public function index(){
+    public function index(BooksRepository $bookRepository){
+
         $users= User::select('id','name')->get();
 
-        $bookRepository = new BooksRepository();
         $books = $bookRepository->all();
-        
+
         return view('home',compact('books','users'));
     }
 
@@ -34,5 +34,9 @@ class BooksController extends Controller
         $user->books()->save($book);
 
         return back();
+    }
+
+    public function show(Book $book){
+        return $book;
     }
 }
